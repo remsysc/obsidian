@@ -1,5 +1,3 @@
-
-
 **One-liner:** MapStruct finds converter methods by matching input/output types — you don't wire them manually.
 
 ## Why It Matters
@@ -37,6 +35,5 @@ You don't call `categoryToString` yourself — MapStruct wires it by type signat
 #backend #java #mapstruct #mapping #spring-boot
 
 ## Links
-- [[DTO Design - Create vs Update DTOs]] [[missing]]
 - [[Java Functional Interfaces and Method References]]
 - [[Static Class vs Spring Component]]

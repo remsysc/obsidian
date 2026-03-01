@@ -30,6 +30,4 @@ public Post findBySlug(String slug) {
 #backend #database #performance #spring-boot #jpql
 
 ## Links
-- [[Functional Indexes in PostgreSQL]]
-- [[Service Layer Responsibilities]]
 - [[The LEFT JOIN and WHERE Trap - Silent INNER JOIN]]

@@ -1,4 +1,3 @@
-
 **One-liner:** Never let the client control fields the system should own.
 
 ## Why It Matters
@@ -34,6 +33,4 @@ void onUpdate() {
 #backend #spring-boot #jpa #api-design #data-integrity
 
 ## Links
-- [[DTO Design - Create vs Update DTOs]] [[missing]]
-- [[JPA Lifecycle Callbacks]] [[missing]]
-- [[Input Validation Layer]] [[missing]]
+- [[API Design - Business Requirements Over Industry Standards]]

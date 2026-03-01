@@ -1,5 +1,3 @@
-
-
 **One-liner:** Design your API around your domain's rules, not around what REST "should" look like.
 
 ## Why It Matters
@@ -29,6 +27,4 @@ Why `POST /posts/{id}/publication` instead of `PATCH /posts/{id}` with `status: 
 #backend #api-design #rest #system-design #domain-modeling
 
 ## Links
-- [[State Machine Pattern for Entity Status]] [[missing]]
-- [[CQRS - Commands vs Queries]] [[missing]]
 - [[System-Owned vs User-Provided Fields]]

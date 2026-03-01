@@ -1,4 +1,3 @@
-
 **One-liner:** `COUNT(*)` counts every row; `COUNT(col)` skips NULLs — they are not interchangeable.
 
 ## Why It Matters
@@ -36,5 +35,4 @@ GROUP BY c.name
 
 ## Links
 - [[The LEFT JOIN and WHERE Trap - Silent INNER JOIN]]
-- [[Functional Indexes in PostgreSQL]]
 - [[DB Query Optimization - LOWER Rule]]

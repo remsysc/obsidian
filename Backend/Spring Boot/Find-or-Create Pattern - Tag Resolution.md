@@ -1,4 +1,3 @@
-
 **One-liner:** When an entity should be reused if it exists and created if it doesn't — use find-or-create.
 
 ## Why It Matters
@@ -38,6 +37,4 @@ Set<Tag> existing = tagRepository.findAllByNameIn(normalizedNames);
 #backend #spring-boot #jpa #patterns #data-integrity
 
 ## Links
-- [[Batch Repository Methods - findAllByXIn]] [[missing]]
-- [[Unique Constraints and Conflict Handling in JPA]] [[missing]]
 - [[Java Functional Interfaces and Method References]]

@@ -33,6 +33,5 @@ tagRepo::save       ==   tag -> tagRepo.save(tag)
 #backend #java #functional-programming #streams #clean-code
 
 ## Links
-- [[Stream API - map, filter, reduce patterns]]
-- [[Optional - orElse vs orElseGet]]
+- [[Find-or-Create Pattern - Tag Resolution]]
 - [[MapStruct Automatic Type Conversion by Signature Matching]]

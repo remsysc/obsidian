@@ -1,4 +1,3 @@
-
 **One-liner:** If a class has no Spring dependencies, make it a static utility — don't inject it.
 
 ## Why It Matters
@@ -37,6 +36,4 @@ public final class EntityValidationUtils {
 #backend #spring-boot #java #design-patterns #clean-code
 
 ## Links
-- [[Spring Bean Lifecycle]] 
-- [[Unit Testing - Mocking Static vs Instance Methods]] 
-- [[Dependency Injection Principles]] 
+- [[MapStruct Automatic Type Conversion by Signature Matching]]

@@ -1,4 +1,3 @@
-
 **One-liner:** A WHERE clause on a LEFT JOINed table silently converts it to an INNER JOIN.
 
 ## Why It Matters
@@ -39,4 +38,3 @@ GROUP BY c.name
 ## Links
 - [[Aggregate Functions - COUNT ALL vs COUNT col]]
 - [[DB Query Optimization - LOWER Rule]]
-- [[JPQL vs Native Queries - When to Use Which]] [[missing]]
