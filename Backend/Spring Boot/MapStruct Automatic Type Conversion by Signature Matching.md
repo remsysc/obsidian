@@ -1,4 +1,5 @@
 
+
 **One-liner:** MapStruct finds converter methods by matching input/output types — you don't wire them manually.
 
 ## Why It Matters

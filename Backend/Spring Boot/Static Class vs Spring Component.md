@@ -1,5 +1,4 @@
 
-
 **One-liner:** If a class has no Spring dependencies, make it a static utility — don't inject it.
 
 ## Why It Matters
