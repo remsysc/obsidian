@@ -1,5 +1,4 @@
 
-
 **One-liner:** Never let the client control fields the system should own.
 
 ## Why It Matters
@@ -8,16 +7,10 @@ you lose data integrity. A malicious or buggy client can forge timestamps
 or bypass business logic entirely.
 
 ## Core Concept
-Split your fields by ownership at the API boundary:
-
 | Owner  | Fields                              |
 |--------|-------------------------------------|
 | User   | title, content, categories, tags    |
 | System | createdAt, updatedAt, readingTime   |
-
-System fields are derived or timestamped automatically — never accepted from input.
-
-## Implementation
 ```java
 @PrePersist
 void onCreate() {
@@ -33,16 +26,14 @@ void onUpdate() {
 ```
 
 ## Gotchas
-- If you use a shared DTO for create + update, system fields leak into the
-  request body — use separate DTOs or `@JsonIgnore`
-- `@PrePersist` / `@PreUpdate` only fire through JPA — bulk JPQL updates
-  bypass them silently
+- Shared DTOs for create + update let system fields leak into the request body — use separate DTOs or `@JsonIgnore`
+- `@PrePersist` / `@PreUpdate` only fire through JPA — bulk JPQL updates bypass them silently
 - Never trust `readingTime` sent from the client, even if it looks harmless
 
 ## Tags
 #backend #spring-boot #jpa #api-design #data-integrity
 
 ## Links
-- [[DTO Design — Create vs Update DTOs]]
-- [[JPA Lifecycle Callbacks]]
-- [[Input Validation Layer]]
+- [[DTO Design - Create vs Update DTOs]] [[missing]]
+- [[JPA Lifecycle Callbacks]] [[missing]]
+- [[Input Validation Layer]] [[missing]]

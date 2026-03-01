@@ -1,4 +1,5 @@
 
+
 **One-liner:** If a class has no Spring dependencies, make it a static utility — don't inject it.
 
 ## Why It Matters
@@ -14,9 +15,9 @@ public class EntityValidationUtils {
     public <T, ID> void validateAllFound(...) { /* pure Java */ }
 }
 
-// ✅ Static utility — honest, lightweight, no injection needed
+// ✅ Static utility — honest, lightweight
 public final class EntityValidationUtils {
-    private EntityValidationUtils() {} // prevent instantiation
+    private EntityValidationUtils() {}
 
     public static <T, ID> void validateAllFound(...) { /* pure Java */ }
 }
@@ -29,16 +30,14 @@ public final class EntityValidationUtils {
 | Has lifecycle hooks          | No Spring context needed           |
 
 ## Gotchas
-- Static utils are **harder to mock** in unit tests — if you later need
-  to mock this class, you'll have to refactor to a bean anyway.
-  Ask yourself: "will I ever need to swap this implementation?"
-- `final` class = no subclassing (good for utils, intentional)
+- Static utils are harder to mock — if you'll ever need to swap the implementation, use a bean
+- `final` class = no subclassing (intentional for utils)
 - `private` constructor = no accidental instantiation
 
 ## Tags
 #backend #spring-boot #java #design-patterns #clean-code
 
 ## Links
-- [[Spring Bean Lifecycle]]
-- [[Unit Testing — Mocking Static vs Instance Methods]]
-- [[Dependency Injection Principles]]
+- [[Spring Bean Lifecycle]] 
+- [[Unit Testing - Mocking Static vs Instance Methods]] 
+- [[Dependency Injection Principles]] 
